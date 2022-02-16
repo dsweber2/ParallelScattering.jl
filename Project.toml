@@ -3,11 +3,30 @@ uuid = "86e52a49-bafb-4c73-aa62-132ac8339f55"
 authors = ["dsweber2 <david.weber2@protonmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+ContinuousWavelets = "96eb917e-2868-4417-9cb6-27e7ff17528f"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+FourierFilterFlux = "3d7dfd45-6c90-4c9b-b697-194a05757159"
+HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
+Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+JLD = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+ScatteringTransform = "eadaac29-8b6b-5395-80fd-9ce36bb46293"
+SharedArrays = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
+Shearlab = "bd728e11-17d4-5679-9a00-f24958f87a1c"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+Wavelets = "29a6e085-ba6d-5f35-a997-948ac2efa89a"
+
 [compat]
 julia = "1"
 
 [extras]
+AbstractFFTs = "621f4979-c628-5d54-868e-fcf4e3e8185c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [targets]
-test = ["Test"]
+test = ["Test", "AbstractFFTs", "Statistics", "Random"]
